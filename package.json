@@ -1,0 +1,26 @@
+{
+  "name": "bmi-calculator-app",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+    
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "node index.js", 
+    "start-frontend": "npm start" 
+  },
+  "keywords": [
+    "bmi-calculator-app"
+  ],
+  "author": "Raj",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
